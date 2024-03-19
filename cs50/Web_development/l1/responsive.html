@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--Bootstrap: library for doing all this formatting-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        @media (min-width:600px) {
+            body { 
+                background-color:red;
+            }
+        }
+        @media (max-width:599px) {
+            body { 
+                background-color:blue;
+            }
+        }
+        #container {
+            display:flex;
+            flex-wrap: wrap;
+        }
+        #container > div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;   
+            padding: 20px;
+            width: 200px;
+        }
+        #grid {
+            background-color: aquamarine;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+
+        .grid-item {
+            background-color: aliceblue;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1. This is some sample for flexbox demo</div>
+        <div>2. This is some sample for flexbox demo</div>
+        <div>3. This is some sample for flexbox demo</div>
+        <div>4. This is some sample for flexbox demo</div>
+        <div>5. This is some sample for flexbox demo</div>
+        <div>6. This is some sample for flexbox demo</div>
+    </div>
+    <div id="grid">
+        <div class ="grid-item">1</div>
+        <div class ="grid-item">2</div>
+        <div class ="grid-item">3</div>
+        <div class ="grid-item">4</div>
+        <div class ="grid-item">5</div>
+        <div class ="grid-item">6</div>
+        <div class ="grid-item">7</div>
+        <div class ="grid-item">8</div>
+        <div class ="grid-item">9</div>
+    </div>
+    <div class="alert alert-primary" role="alert">
+        a simple primary alert from bootstrap!
+    </div>
+</body>
+</html>
+
